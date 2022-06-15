@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/home.css" /> 
+    <title>Evil Genious</title>        
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+      <!-- Menú principal -->
+      <nav class="navbar navbar-expand-lg navbar-dark position-fixed">
+        <div class="container-fluid">
+          <a class="" href="#">
+            <img id="img-nav" src="../assets/logo_chico.png" width="70" alt="logo" class=""/>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu_lista">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/homenuevo.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <!-- si el usuario es admin se habilite la opcion administración  -->
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <button class="btn btn-outline-light ms-2" onclick="cerrarSesion()">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- ----------------------------- -->
+    </header>
+
+    <!--principal-->
+    <main>
+     <!-- carusel -->
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">     
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="pelicula-principal">             
+                <img src="https://www.themoviedb.org/t/p/original/xHrp2pq73oi9D64xigPjWW1wcz1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <div class="contenedor">                
+                        <h3 class="titulo" class position = "start">Batman (2022)</h3>
+                        <p class="descripcion" class position = start>
+                            En su segundo año de lucha contra el crimen, Batman descubre la corrupción en Gotham City que conecta a su propia familia mientras se enfrenta a un asesino en serie conocido como Riddler.
+                        </p>
+                        <a href="../pages/error404.html" role="button" class="boton" ><i class="fas fa-play"></i>Reproducir</a>
+                        <a href="#" role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="carousel-item">
+            <div class="pelicula-principal">             
+                <img src="https://www.themoviedb.org/t/p/original/moAPa0kotCJZXC5nSnoNNPP0kUE.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <div class="contenedor">                  
+                        <h3 class="titulo" class position = "start">Animales fantásticos: Los secretos de Dumbledore (2022)</h3>
+                        <p class="descripcion" class position = start>
+                         El profesor Albus Dumbledore sabe que el poderoso y oscuro mago Gellert Grindelwald se está moviendo para tomar el control del mundo mágico. Incapaz de detenerlo solo, confía al magizoólogo Newt Scamander para que dirija un intrépido equipo de magos y brujas. Pronto se encuentran con una variedad de bestias antiguas y nuevas mientras chocan con la creciente legión de seguidores de Grindelwald.
+                        </p>
+                        <a href="#" role="button" class="boton" ><i class="fas fa-play"></i>Reproducir</a>
+                        <a href="#" role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="pelicula-principal">             
+                <img src="https://www.themoviedb.org/t/p/original/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <div class="contenedor">                  
+                        <h3 class="titulo" class position = "start">Inexplorado (2022)</h3>
+                        <p class="descripcion" class position = start>
+                            Nathan Drake, un joven astuto en la calle, y su socio bromista Victor "Sully" Sullivan se embarcan en una peligrosa búsqueda del "tesoro más grande jamás encontrado" mientras buscan pistas que pueden conducir al hermano perdido de Nathan.
+                        </p>                              
+                        <a href="#" role="button" class="boton" ><i class="fas fa-play"></i>Reproducir</a>
+                        <a href="#" role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</a>
+                    </div>
+              </div>
+            </div>
+        </div>        
+      </div>
+  
+     <!--Fin-->
+
+     <!--Categorias-->
+     <div class="container" id="contenedor-peliculas">       
+        <!--aqui empiezan las categorias-->
+        <div id="" class="peliculas-recomendadasx row mt-5">
+            <div class="contenedor-controles">
+                <h3>Recomendado para ti</h3>
+                <div class="indicadores"></div>
+            </div>  
+            <div class="contenedor-principal"> 
+                <button role="button" id="" class="flecha-izquierda">◀</button>  
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/1.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/2.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/3.png" alt=""></a>
+                        </div>
+                      
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/4.png" alt=""></a>
+                        </div>
+                        
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/5.png" alt=""></a>
+                        </div>
+                          
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/6.png" alt=""></a>
+                        </div>                          
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/7.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/3.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/4.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/5.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/6.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="/assets/img/7.png" alt=""></a>
+                        </div>   
+                    </div>
+                </div>          
+                <button type="button" id="" class="flecha-derecha">▶</button>            
+            </div>
+        </div>  <!--ciera la fila-->
+
+          <!--terror-->
+         <div id="" class="peliculas-terror row mt-5">
+            <div class="contenedor-controles">
+               <h3>Peliculas de Terror</h3>
+               <div class="indicadores"></div>
+              </div>                              
+            </div>  
+         </div>
+
+        <!--ciencia ficcion-->
+        <div id="" class="peliculas-recomendadas row mt-5">
+          <div class="contenedor-controles">
+            <h3>Peliculas de Ciencia Ficcion</h3>
+            <div class="indicadores"></div>
+          </div>  
+        </div>        
+
+        <!--accion y aventura-->
+        <div id="" class="peliculas-recomendadas row mt-5">
+
+        </div>                
+      </div>  
+      
+      
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+
+    </footer>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kit.fontawesome.com/fcdcf831c3.js" crossorigin="anonymous"></script>
+  <script src="../js/home.js"></script>
+  
+  
+</body>
+</html>

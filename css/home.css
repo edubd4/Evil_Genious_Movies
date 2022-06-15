@@ -1,0 +1,13 @@
+
+body{
+    background-color: black;
+}
+
+.img_tarjeta{
+    height: 200px;
+    object-fit: cover;
+}
+
+#titulo1{
+    color: aliceblue;
+}

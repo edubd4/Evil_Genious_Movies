@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+img-nav{
+    width: 16px;
+}
+
+nav{
+    
+    background: #131321;
+   z-index: 1000;
+   width: 100%;
+} 
+
+img-footer{
+    width: 16px;
+    }
+
+footer{
+    background: #131321;
+}
